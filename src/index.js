@@ -2,9 +2,9 @@ var L = require('leaflet');
 require('leaflet-draw');
 require('../lib/L.ImageTransform');
 
-const cartourl = '//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
-const osmurl = '//{s}.tile.osm.org/{z}/{x}/{y}.png';
-const stamenurl = '//{s}.tile.stamen.com/toner/{z}/{x}/{y}.png';
+const cartourl = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+const osmurl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
+const stamenurl = 'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png';
 
 const osm = new L.TileLayer(stamenurl, {
   maxZoom: 18
